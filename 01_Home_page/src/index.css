@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#heroContainer {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.heroContent h1 {
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+  margin: 0px;
+}
+
+.heroContent p {
+  font-weight: 600;
+  color: var(--gray);
+  max-width: 400px;
+}
+
+.heroBtn {
+  display: flex;
+  gap: 40px;
+  font-size: 24px;
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.brandIcon {
+  display: flex;
+  gap: 16px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+  }
+  nav ul {
+    gap: 14px;
+  }
+  nav ul li {
+    display: none;
+  }
+  button {
+    padding: 2px 12px;
+    height: 24px;
+    font-weight: 500;
+  }
+  #loginBtn {
+    font-size: 12px;
+    padding: 1px 12px;
+  }
+  #heroContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100vh;
+  }
+  .heroContent h1 {
+    font-weight: 600;
+    line-height: 80px;
+    font-size: 80px;
+    margin: 0px;
+  }
+  .heroContent p {
+    font-weight: 400;
+  }
+  .heroBtn {
+    font-size: 12px;
+  }
+  #logo {
+    height: 30px;
+  }
+  #nikeShoeImg {
+    height: 450px;
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #heroContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
